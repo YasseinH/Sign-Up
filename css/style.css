@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* Small */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+/* Medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+/* Large */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* Start Header */
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 27px;
+}
+
+header .container .logo h1 a {
+    text-decoration: none;
+}
+
+header .container nav {
+    display: flex;
+    align-items: center;
+}
+
+header .container a {
+    text-decoration: none;
+    color: #83869f;
+    font-size: 18px;
+}
+
+header .container button {
+    background-color: white;
+    padding: 6px 15px;
+    border: 1px solid #83869f;
+    border-radius: 1.25rem;
+    margin-left: 15px;
+}
+
+header .container button a {
+    color: #83869f;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+header .svg {
+    width: 44%;
+    position: absolute;
+    left: 41px;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 26%;
+}
+
+
+/* End Header */
+
+
+/* Start Form */
+
+.form .container {
+    width: 32%;
+    position: relative;
+    left: 21%;
+    margin-top: 46px;
+}
+
+.form .container .header h1 {
+    color: #303030;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form .container .header p {
+    color: #a5a3b7;
+    font-size: 18px;
+}
+
+.form .container form label {
+    display: block;
+    color: #3c3c3c;
+    margin-top: 22px;
+    margin-bottom: 11px;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.form .container form label.user-name {
+    margin-top: 12%;
+}
+
+.form .container form input {
+    width: 92%;
+    height: 35px;
+    padding: 20px 13px;
+    border: 1px solid #dcdee4;
+    border-radius: 5px;
+    color: #dcdee4;
+    outline-color: #781ee5;
+    font-size: 16px;
+}
+
+.form .container form i {
+    position: relative;
+    right: 25px;
+    color: #a5a3b7;
+}
+
+.form .container form i:hover {
+    cursor: pointer;
+}
+
+.form .container form input:focus {
+    color: #781ee5;
+}
+
+.form .container form #password-error {
+    display: none;
+}
+
+.form .container form #password-error li {
+    font-size: 15px;
+    color: red;
+    padding: 15px 1px;
+}
+
+.form .container .button-items {
+    margin-top: 10px;
+}
+
+.form .container .button-items button {
+    background-color: #7c00fb;
+    padding: 12px 52px;
+    border: 1px solid #7c00fb;
+    border-radius: 1.25rem;
+    color: white;
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+.form .container .button-items .items {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.form .container .button-items .items .text {
+    color: #83869f;
+    font-size: 17px;
+}
+
+.form .container .button-items .items .icons i {
+    background-color: white;
+    border: 1px solid #83869f;
+    border-radius: 50%;
+    padding: 6px 9px;
+}
+
+.form .container .button-items .items .icons i:hover {
+    cursor: pointer;
+}
+
+.form .container .button-items .items .icons .fa-facebook {
+    color: #366def;
+    margin-left: 16px;
+}
+
+.form .container .button-items .items .icons .fa-linkedin {
+    color: #207aba;
+}
+
+
+/* End Form */
+
+
+/* Start Adjust Responsibility */
+
+@media (max-width: 992px) {
+    header .svg {
+        width: 48%;
+        left: 41px;
+        top: 46%;
+        left: 30%;
+    }
+    .form .container {
+        width: 44%;
+    }
+}
+
+@media (max-width: 768px) {
+    header .svg {
+        display: none;
+    }
+    .form .container {
+        width: 69%;
+        position: relative;
+        left: 0;
+    }
+}
+
+@media (max-width: 428px) {
+    .form .container {
+        width: 81%;
+        position: relative;
+        left: 0;
+    }
+    header .container a {
+        font-size: 16px;
+    }
+    header .container button {
+        padding: 4px 5px;
+    }
+}
+
+@media (max-width: 373px) {
+    .form .container {
+        width: 93%;
+        position: relative;
+        left: 0;
+    }
+}
+
+
+/* End Adjust Responsibility */
